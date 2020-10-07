@@ -1,6 +1,6 @@
 ##################################################################
 #
-# ie_ybin_mcont: Calculate the organic indirect effect for a binary 
+# indirect_ybin_mcont: Calculate the organic indirect effect for a binary 
 #           outcome with a continuous mediator with an assay limit
 #            (Lok & Bosch 2020)
 #
@@ -16,7 +16,7 @@
 # shift: treatment mediator distribution shift
 # AL: Assay limit
 
-ie_ybin_mcont <- function(Y, M, BAL, C, shift, AL){
+indirect_ybin_mcont <- function(Y, M, BAL, C, shift, AL){
   #check that Y is binary
   if(sum(Y) + sum(1-Y) != length(Y)) stop("Supplied Y must be binary vector")
   #check that M is continuous numeric variable

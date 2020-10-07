@@ -1,6 +1,6 @@
 ##################################################################
 #
-# ie_ybin_mcont: Calculate the organic indirect effect for a binary 
+# indirect_ybin_mcont: Calculate the organic indirect effect for a binary 
 #           outcome with a binary mediator (Lok & Bosch 2020)
 #
 #
@@ -13,7 +13,7 @@
 # factor: factor for which treatment increases the odds of 
 #         Mbar being 1 
 
-ie_ybin_mbin <- function(Y, Mbar, C, factor){
+indirect_ybin_mbin <- function(Y, Mbar, C, factor){
   #create data.frame
   dat <- data.frame(cbind(Y, Mbar, C))
   
